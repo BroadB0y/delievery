@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка | Суши-Бар Sakura</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header-animate">
+        <div class="container">
+            <div class="logo pulse">Sakura</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Меню</a></li>
+                    <li><a href="delivery.html" class="active">Доставка</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="phone shake">
+                    <a href="tel:+78005553535">8 (800) 555-35-35</a>
+                </div>
+                <div class="cart-icon" id="cartToggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Ваша корзина</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span id="cartTotal">0 ₽</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <main>
+        <section class="delivery-hero slide-in">
+            <div class="container">
+                <h1>Условия доставки</h1>
+                <p>Быстро, вкусно и прямо к вашей двери</p>
+            </div>
+        </section>
+
+        <section class="delivery-info">
+            <div class="container">
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h2>Время доставки</h2>
+                    <p>Доставка осуществляется ежедневно с 11:00 до 23:00.</p>
+                    <p>Среднее время доставки: 45-60 минут.</p>
+                </div>
+                
+                <div class="info-card fade-in" style="animation-delay: 0.2s">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h2>Зоны доставки</h2>
+                    <p>Бесплатная доставка при заказе от 1500₽ в пределах города.</p>
+                    <p>Доставка в пригород: +200₽ к заказу.</p>
+                </div>
+                
+                <div class="info-card fade-in" style="animation-delay: 0.4s">
+                    <div class="info-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h2>Оплата</h2>
+                    <p>Наличными курьеру</p>
+                    <p>Картой онлайн или при получении</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-map">
+            <div class="container">
+                <h2 class="section-title">Зона доставки</h2>
+                <div class="map-container">
+                    <!-- Здесь можно добавить карту -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Карта зоны доставки</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-animate">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-phone"></i> 8 (800) 555-35-35</p>
+                    <p><i class="fas fa-clock"></i> Ежедневно с 11:00 до 23:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Адрес</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Сакуры, 15</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Sakura · Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
